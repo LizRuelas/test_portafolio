@@ -81,10 +81,6 @@ include('js/jquery.easing.1.3.js');;
         }
     }
 })(jQuery);;
-(function($) {
-    include('js/mailform/jquery.form.min.js');
-    include('js/mailform/jquery.rd-mailform.min.js');
-})(jQuery);
 $(function() {
     var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
         ua = navigator.userAgent,
