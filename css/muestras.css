@@ -15,12 +15,13 @@
       width: 20%;
 		}
 		ul.tabs li{
-			background: none;
-			color: #222;
+			background: #707070;
+			color: white;
 			display: inline-block;
-			padding: 10px 15px;
+			padding: 10px 25px;
 			cursor: pointer;
       display: block;
+			border-top: 1px solid black;
 		}
 
 		ul.tabs li.current{
@@ -31,11 +32,20 @@
 		.tab-content{
 			display: none;
 			background: #292729;
-			padding: 15px;
+			padding: 40px 50px 30px 50px;
+			position: relative;
       float: left;
       width: 80%;
 		}
 
 		.tab-content.current{
 			display: inherit;
+		}
+
+		.boton-vermas {
+			background: #707070;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
+			font-size: 20px;
 		}

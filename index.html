@@ -4,6 +4,9 @@
     <title>Home</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link src="css/fotos-muestras.css" ></link>
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -13,10 +16,12 @@
     <link rel="stylesheet" href="css/camera.css"/>
     <link rel="stylesheet" href="css/muestras.css"/>
 
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script src='js/device.min.js'></script>
 
+    <script src="js/muestras.js"></script>
     <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
@@ -119,31 +124,41 @@
               <div class="col-md-12 ">
 
                   <ul class="tabs">
-                		<li class="tab-link current" data-tab="tab-1">Hu-Manos</li>
-                		<li class="tab-link" data-tab="tab-2">Seres en el tiempo</li>
-                		<li class="tab-link" data-tab="tab-3">A propósito de Fausto</li>
-                		<li class="tab-link" data-tab="tab-4">Apu - Dance</li>
+                		<li class="tab-link current" data-tab="tab-1"><h6>Hu-Manos</h6></li>
+                		<li class="tab-link" data-tab="tab-2"><h6>Seres en el tiempo</h6></li>
+                		<li class="tab-link" data-tab="tab-3"><h6>A propósito de Fausto</h6></li>
+                		<li class="tab-link" data-tab="tab-4"><h6>Apu - Dance</h6></li>
                 	</ul>
 
                 	<div id="tab-1" class="tab-content current">
-                		<div class="camera_container">
-                      <div id="cameraw" class="camera_wrap">
-                          <div data-src="images/page-1_slide01.jpg">
-                          </div>
-                          <div data-src="images/page-1_slide02.jpg">
-                          </div>
-                          <div data-src="images/page-1_slide03.jpg">
-                          </div>
-                      </div>
+                    <div id="slides">
+                      <img src="images/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                      <img src="images/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+                      <img src="images/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+                      <img src="images/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
                     </div>
-                    <h6 class="center">
-                      1 de 5 Fotos <br>
-                      9 de Septiembre 2009 / Centro Cultural Parra del riego
-                    </h6>
-
-                	</div>
+                    <div class="slidesjs-log" style="text-align:center;margin-top:28%;font-size:20px">
+                      <span class="slidesjs-slide-number">1</span> de 4 fotos <br>
+                      <span>9 de Septiembre 2009 / Centro Cultural Parra del Riego</span>
+                    </div>
+                    <div style="text-align:center;margin-top:20px">
+                      <a class="boton-vermas" href="#" class="button">Ver álbum completo</a>
+                    </div>
+                 	</div>
                 	<div id="tab-2" class="tab-content">
-                		 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div id="slides2">
+                      <img src="images/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                      <img src="images/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+                      <img src="images/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+                      <img src="images/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+                    </div>
+                    <div id="slidesjs-log2" style="text-align:center;margin-top:28%;font-size:20px">
+                      <span class="slidesjs-slide-number">1</span> de 4 fotos <br>
+                      <span>9 de Septiembre 2009 / Centro Cultural Parra del Riego</span>
+                    </div>
+                    <div style="text-align:center;margin-top:20px">
+                      <a class="boton-vermas" href="#" class="button">Ver álbum completo</a>
+                    </div>
                 	</div>
                 	<div id="tab-3" class="tab-content">
                 		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -375,8 +390,8 @@
         });
       });
     </script>
-    <script src="js/script.js"></script>
-    <script src="js/muestras.js"></script>
+
+
 </div>
     <script type="text/javascript">
      var _gaq = _gaq || [];
@@ -389,7 +404,78 @@
       })();
     </script>
 
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <script src="js/jquery.slides.min.js"></script>
+    <script>
+      $(function() {
+        $('#slides').slidesjs({
+          width: 940,
+          height: 528,
+          callback: {
+            loaded: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Loaded with slide #' + number);
 
+              // Show start slide in log
+              $('#slidesjs-log .slidesjs-slide-number').text(number);
+            },
+            start: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Start Animation on slide #' + number);
+            },
+            complete: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Animation Complete. Current slide is #' + number);
+
+              // Change slide number on animation complete
+              $('#slidesjs-log .slidesjs-slide-number').text(number);
+            }
+          },
+          navigation: {
+            effect: "fade"
+          },
+          effect: {
+            fade: {
+              speed: 400
+            }
+          }
+        });
+        $('#slides2').slidesjs({
+          width: 940,
+          height: 528,
+          callback: {
+            loaded: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Loaded with slide #' + number);
+
+              // Show start slide in log
+              $('#slidesjs-log2 .slidesjs-slide-number').text(number);
+            },
+            start: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Start Animation on slide #' + number);
+            },
+            complete: function(number) {
+              // Use your browser console to view log
+              console.log('SlidesJS: Animation Complete. Current slide is #' + number);
+
+              // Change slide number on animation complete
+              $('#slidesjs-log2 .slidesjs-slide-number').text(number);
+            }
+          },
+          navigation: {
+            effect: "fade"
+          },
+          effect: {
+            fade: {
+              speed: 400
+            }
+          }
+        });
+      });
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

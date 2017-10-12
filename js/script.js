@@ -120,8 +120,7 @@ if (!result) {
 document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0' + userScale + '">');;
 (function($) {
     var o = $('#camera');
-    var w = $('#cameraw');
-    if (o.length > 0 && w.length > 0 ) {
+    if (o.length > 0 ) {
         if (!(isIE() && (isIE() > 9))) {
             include('js/jquery.mobile.customized.min.js');
         }
@@ -141,22 +140,9 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
                 mobileNavHover: false,
                 fx: 'simpleFade'
             });
-            w.camera({
-                autoAdvance: false,
-                height: '48.828125%',
-                minHeight: '350px',
-                pagination: false,
-                thumbnails: false,
-                playPause: false,
-                hover: false,
-                loader: 'none',
-                navigation: true,
-                navigationHover: false,
-                mobileNavHover: false,
-                fx: 'simpleFade'
-            })
         });
     }
+
 })(jQuery);;
 (function($) {
     include('js/scrollTo.js');
