@@ -1,6 +1,5 @@
 #muestras{
-
-			line-height: 1.6
+			line-height: 1.6;
 		}
 		.container_muestras{
 			width: 800px;
@@ -13,6 +12,7 @@
 			list-style: none;
       float: left;
       width: 20%;
+
 		}
 		ul.tabs li{
 			background: #707070;
@@ -36,16 +36,26 @@
 			position: relative;
       float: left;
       width: 80%;
+			border-radius: 0px 8px 8px 8px;
 		}
 
 		.tab-content.current{
 			display: inherit;
 		}
 
+		ul.tabs li:first-child{
+			border-radius: 8px 0px 0px 0px;
+		}
+
+		ul.tabs li:last-child{
+			border-radius: 0px 0px 0px 8px;
+		}
+
 		.boton-vermas {
 			background: #707070;
 			color: white;
-			padding: 10px;
+			padding: 5px 10px;
 			cursor: pointer;
 			font-size: 20px;
+			border-radius: 5px;
 		}

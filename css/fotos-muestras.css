@@ -1,9 +1,5 @@
 
 /* Prevent the slideshow from flashing on load */
-#slides,
-    #slides2{
-  display: none
-}
 
 /* Center the slideshow */
 .container {
